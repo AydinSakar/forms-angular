@@ -7,6 +7,7 @@ myDemoApp.config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/index', {templateUrl: 'partials/howto.html'} ).
             when('/build-app', {templateUrl: 'partials/build-app.html'} ).
+            when('/reports', {templateUrl: 'partials/reports.html'}).
             when('/404', {templateUrl: 'partials/404.html'} ).
             when('/z_custom_form/new', {templateUrl: 'partials/custom-new.html'}).            // example view override
             when('/z_custom_form/:id/edit', {templateUrl: 'partials/custom-edit.html'}).      // example view override
@@ -20,6 +21,7 @@ myDemoApp.config(['$routeProvider', function($routeProvider) {
             when('/:model/:form/:id/edit', {templateUrl: 'partials/base-edit.html'}).  // non default form (different fields etc)
             when('/:model/:form/new', {templateUrl: 'partials/base-edit.html'}).       // non default form (different fields etc)
             when('/:model/:form', {templateUrl: 'partials/base-list.html'}).           // list page with links to non default form
+            
 
             otherwise({redirectTo: '/index'});
     }]
